@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Montserrat:wght@100..900&display=swap");
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-open, .menu-close {
+    display: none;
+    font-size: 1.1em;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: hsl(18, 58%, 82%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header-list {
+    display: flex;
+    gap: 70px;
+    padding: 20px 180px;
+}
+
+.nav-links {
+    color: black;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.nav-links:hover {
+    color:  hsl(25, 90%, 54%);
+}
+
+.title {
+    cursor: pointer;
+    font-size: 1em;
+    padding: 20px 180px;
+}
+
+.imagem {
+    width: 600px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.principal {
+    min-width: 700px;
+}
+
+.tit {
+    font-family: "Jolly Lodger", system-ui;
+    font-size: 7em;
+    max-width: 450px;
+    margin-bottom: 35px;
+}
+
+.descricao {
+    font-size: 1.2em;
+    font-weight: 500;
+    max-width: 400px;
+    margin-bottom: 35px;
+}
+
+.btn {
+    background-color: hsl(25, 90%, 54%);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: hsl(25, 50%, 50%);
+}
+
+
+@media screen and (max-width: 1298px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tit {
+        font-size: 4em;
+    }
+
+    .descricao {
+        font-size: 1em;
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .imagem {
+        width: 30%;
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-open {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 30px 60px;
+        font-size: 1.3em;
+        cursor: pointer;
+    }
+}
